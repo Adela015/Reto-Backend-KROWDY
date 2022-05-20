@@ -6,8 +6,8 @@ const routerFlowInstance = new Router();
 
 routerFlowInstance.post('/processvideo', async (req, res) => {
   try {
-    const {inputvideo} = req.body;
-    res.json({inputvideo});
+    const {inputvideo, inputvideo2, inputvideo3, inputvideo4} = req.body;
+    res.json({inputvideo, inputvideo2, inputvideo3, inputvideo4});
     await videoFlowController.executeProcess(inputvideo);
   } catch (error) {
     let errorMessage = 'Failed to do something exceptional';

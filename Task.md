@@ -21,6 +21,8 @@ final: video 7
 
 // command
 ffmpeg -f concat -safe 0 -i mylist.txt -c copy output.mp4
+ffmpeg -f concat -safe 0 -i primerProceso.txt -c copy inputvideo4.mp4
+ffmpeg -f concat -safe 0 -i segundoProceso.txt -c copy inputvideo3.mp4
 
 
 primer archivo
